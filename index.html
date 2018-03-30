@@ -1,0 +1,39 @@
+<!-- The task is to create a jQuery plugin which will sequentially animate
+subelements of the selected html element, according to parameters given
+in its call.
+
+For example, let's say we have an <ul> element, and we call the plugin
+on it with animation type parameter "fadeIn", animation duration of
+"500" (ms) and animation delay of "200" (ms).
+
+Firing that makes all the subelements (<li>'s) appear on the page, one
+after another, each with a 200ms delay from the previous one. In this
+particular case, it means they will overlap, since the second one (or
+even the third) will start fading in before the first one finished. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Test-task</title>
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="animateChildrenOneByOne.js"></script>
+    <script>
+    $(function(){
+        $('li').animateChildrenOneByOne();
+    });</script>
+</head>
+
+<body>
+
+    <ul>
+        <li>Home</li>
+        <li>About us</li>
+        <li>Career</li>
+        <li>Contact us</li>
+    </ul>
+
+</body>
+</html>
