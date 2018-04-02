@@ -21,21 +21,27 @@ even the third) will start fading in before the first one finished. -->
     <link rel="stylesheet" href="./node_modules/qunit/qunit/qunit.css">
     <script src="./node_modules/jquery/dist/jquery.min.js"></script>
     <script src="animateChildrenOneByOne.js"></script>
-    <script>
-    $(function(){
-        $('li').animateChildrenOneByOne('fadeOut', 100, 3500);
-    });</script>
 </head>
 
 <body>
+        <div id="qunit"></div>
+        <div id="qunit-fixture"></div>
 
-    <ul>
+    <ul id="test1Ul">
         <li>Home</li>
         <li>About us</li>
         <li>Career</li>
         <li>Contact us</li>
     </ul>
+
+    <ul id="test2Ul">
+            <li>Home</li>
+            <li>About us</li>
+            <li>Career</li>
+            <li>Contact us</li>
+    </ul>
+
     <script src="./node_modules/qunit/qunit/qunit.js"></script>
-    <script src="tests.js"></script>
+    <script src="./test/tests.js"></script>
 </body>
 </html>
