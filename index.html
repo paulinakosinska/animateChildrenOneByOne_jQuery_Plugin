@@ -18,11 +18,12 @@ even the third) will start fading in before the first one finished. -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Test-task</title>
+    <link rel="stylesheet" href="./node_modules/qunit/qunit/qunit.css">
     <script src="./node_modules/jquery/dist/jquery.min.js"></script>
     <script src="animateChildrenOneByOne.js"></script>
     <script>
     $(function(){
-        $('li').animateChildrenOneByOne();
+        $('li').animateChildrenOneByOne('fadeOut', 100, 3500);
     });</script>
 </head>
 
@@ -34,6 +35,7 @@ even the third) will start fading in before the first one finished. -->
         <li>Career</li>
         <li>Contact us</li>
     </ul>
-
+    <script src="./node_modules/qunit/qunit/qunit.js"></script>
+    <script src="tests.js"></script>
 </body>
 </html>
