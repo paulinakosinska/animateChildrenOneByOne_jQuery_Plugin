@@ -4,7 +4,7 @@
     duration = (duration !== undefined) ? duration : 500;
        
     var i=0;
-    this.each(function(){
+    this.children().each(function(){
         let currentElement = $(this);
         i++
         setTimeout(function () {
