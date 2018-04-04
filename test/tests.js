@@ -1,6 +1,7 @@
 QUnit.test("li fadeIn test", function(assert) {
   var done = assert.async();
-  $('#test1Ul').hide().animateChildrenOneByOne('fadeIn', 1, 1);
+
+  $('#test1Ul').animateChildrenOneByOne('fadeIn', 1, 1);
   setTimeout (function() {
     var isVisible = $('#test1Ul > li').is(":visible");
     assert.ok( isVisible , "passed");
@@ -17,5 +18,5 @@ QUnit.test("li fadeOut test", function(assert) {
     var isNotVisible = !isVisible;
     assert.ok( isNotVisible , "passed");
     done();
-  }, 15 );
+  }, 30 );
 });
