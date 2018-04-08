@@ -19,3 +19,13 @@ QUnit.test('li fadeOut test', function (assert)  {
 		done();
 	}, 30);
 });
+
+QUnit.test('automaticly work with another plugin', function (assert) {
+
+
+});
+
+QUnit.test('animate multiple elements', function(assert) {
+
+  
+});
