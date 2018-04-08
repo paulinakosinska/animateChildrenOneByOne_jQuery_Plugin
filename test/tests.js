@@ -21,11 +21,17 @@ QUnit.test('li fadeOut test', function (assert)  {
 });
 
 QUnit.test('automaticly work with another plugin', function (assert) {
-
-
+	
 });
 
 QUnit.test('animate multiple elements', function(assert) {
-
-  
+	var done = assert.async();
+	$('.multiple-list').animateChildrenOneByOne('fadeOut', 20, 1);
+	setTimeout(function() {
+		var isVisible = $('.multiple-list > li').is(':visible');
+		var isNotVisible = !isVisible;
+		assert.ok(isNotVisible, 'passed');
+		done();
+		// 100 = 4*20 + 20 (as backup time)
+	}, 100);
 });
