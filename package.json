@@ -9,14 +9,12 @@
   "author": "Paulina Kosinska <paulinakosinska95@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "jquery": "^3.3.1",
+    "jquery": "^3.3.1"
   },
   "devDependencies": {
     "eslint": "^4.19.1",
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-plugin-import": "^2.10.0",
-    "qunit": "^2.6.0",
-    "mo-js": "^0.288.2",
-    "pageswitch": "^2.3.2"
+    "qunit": "^2.6.0"
   }
 }
