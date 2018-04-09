@@ -8,25 +8,11 @@ $.fn.animateChildrenOneByOne = function (animate, delay, duration) {
 			var currentElement = $(this);
 			i++;
 			setTimeout(function() {
-				switch (animate) {
-				case 'fadeIn':
-					currentElement.fadeIn(duration);
-					break;
-				case 'fadeOut':
-					currentElement.fadeOut(duration);
-					break;
-				case 'slideDown':
-					currentElement.slideDown(duration);
-					break;
-				case 'slideUp':
-					currentElement.slideUp(duration);
-					break;
-				case 'hide':
-					currentElement.hide(duration);
-					break;
-				default:
-					currentElement.show(duration);
-					break;
+				try {
+					currentElement[animate](duration);
+				}
+				catch (err)	{
+					console.error(`Invalid animation [${err}]`);
 				}
 			}, i * delay);
 		});
