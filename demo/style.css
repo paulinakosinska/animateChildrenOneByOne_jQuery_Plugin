@@ -9,7 +9,7 @@ section {
 }
 
 .btn {
-    margin: 25px;
+    margin: 20px;
 }
 
 .cards {
@@ -17,13 +17,6 @@ section {
     justify-content: space-around;
 }
 
-ul {
-    border: 1px solid #DCDCDC;
-    border-radius: 3px;
-    background-color: #fff;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    list-style-type: none;
-    padding: 60px;
+.hidden {
+    display: none;
 }
