@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>animateChildrenOneByOne Plugin</title>
+    <link rel="stylesheet" type="text/css" href="demo/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <script src="./src/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./src/animateChildrenOneByOne.js"></script>
+</head>
+
+<body>
+    <main class="container">
+        <h1>animateChildrenOneByOne Plugin</h1>
+        <section>
+            <h2>$('#cards-fade-out').animateChildrenOneByOne('fadeOut', 1, 1);</h2>
+            <button type="button" id="cards-fade-out-btn" class="btn btn-info">Click to run animation</button>
+            <div id="cards-fade-out" class="cards">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-info">Go somewhere</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-info">Go somewhere</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-info">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>$('#cards-fade-in').animateChildrenOneByOne('fadeIn', 1, 1);</h2>
+            <button type="button" id="cards-fade-in-btn" class="btn btn-info">Click to run animation</button>
+            <div id="cards-fade-in" class="cards">
+                <div class="card" style="width: 18rem;" hidden>
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-info">Go somewhere</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;" hidden>
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-info">Go somewhere</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;" hidden>
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-info">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>$('#cards-slide-down').animateChildrenOneByOne('slideDown', 1, 1);</h2>
+            <button type="button" id="cards-slide-down-btn" class="btn btn-info">Click to run animation</button>
+            <div id="cards-slide-down" class="cards">
+                <div class="card" style="width: 18rem;" hidden>
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-info">Go somewhere</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;" hidden>
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-info">Go somewhere</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;" hidden>
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-info">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>$('#cards-slide-up').animateChildrenOneByOne('slideUp', 1, 1);</h2>
+            <button type="button" id="cards-slide-up-btn" class="btn btn-info">Click to run animation</button>
+            <div id="cards-slide-up" class="cards">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-info">Go somewhere</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-info">Go somewhere</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-info">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>$('#ul-fade-out').animateChildrenOneByOne('fadeOut', 1, 1);</h2>
+            <button type="button" id="ul-fade-out-btn" class="btn btn-info">Click to run animation</button>
+            <div id="ul-fade-out" class="cards">
+                <ul>
+                    <li>Element1</li>
+                    <li>Element2</li>
+                    <li>Element3</li>
+                </ul>
+                <ul>
+                    <li>Element1</li>
+                    <li>Element2</li>
+                    <li>Element3</li>
+                </ul>
+                <ul>
+                    <li>Element1</li>
+                    <li>Element2</li>
+                    <li>Element3</li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+    <script src="demo/script.js"></script>
+</body>
+
+</html>

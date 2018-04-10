@@ -1,4 +1,29 @@
-.cards-fade-out {
+body {
+    background-image: url("https://images.unsplash.com/photo-1483694583352-6af4091a9498?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=05656b575d1056c0ff3e8ac9d22b5113&auto=format&fit=crop&w=1650&q=80");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+section {
+    margin: 90px;
+}
+
+.btn {
+    margin: 25px;
+}
+
+.cards {
     display: flex;
     justify-content: space-around;
+}
+
+ul {
+    border: 1px solid #DCDCDC;
+    border-radius: 3px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 60px;
 }
