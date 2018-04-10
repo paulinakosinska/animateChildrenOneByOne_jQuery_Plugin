@@ -1,6 +1,6 @@
 {
   "name": "animate_childen",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "This plugin sequentially animates subelements of the selected html element.",
   "main": "script.js",
   "scripts": {
